@@ -1,0 +1,23 @@
+name: SmartPen
+
+options:
+  bundleIdPrefix: com.smartpen
+  deploymentTarget:
+    iOS: "16.0"
+
+targets:
+  SmartPen:
+    type: application
+    platform: iOS
+    sources:
+      - path: SmartPen
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.smartpen.app
+        PRODUCT_NAME: SmartPen
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Микрофон используется для распознавания голосового ответа Siri."
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "Распознавание речи преобразует голос в текст."
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: "Bluetooth используется для передачи текста на умную ручку."
