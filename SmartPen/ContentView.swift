@@ -427,7 +427,8 @@ struct ContentView: View {
                 }
                 .frame(height: 170)
                 .background(Color.gray.opacity(0.12))
-                .cornerRadius(12)Divider()
+                .cornerRadius(12)
+                Divider()
 
                 Text("Bluetooth")
                     .font(.headline)
