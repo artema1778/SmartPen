@@ -281,7 +281,8 @@ final class SpeechManager: ObservableObject {
             try session.setActive(true)
 
             let newRequest = SFSpeechAudioBufferRecognitionRequest()
-            newRequest.shouldReportPartialResults = truerequest = newRequest
+            newRequest.shouldReportPartialResults = true
+            request = newRequest
             lastText = ""
             text = ""
             answerSent = false
